@@ -1,0 +1,1800 @@
+Fecha Acceso:July 30, 2017, 3:54 am
+Attempt: Failed
+User: 
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => GET
+REQUEST_TIME => 1501403072
+REQUEST_TIME_FLOAT => 1501403072.488
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE => es-US,es-419;q=0.8,es;q=0.6
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/modulos/index.php?filtro=1
+HTTP_USER_AGENT => Mozilla/5.0 (Linux; Android 5.0; BLU STUDIO C 5+5 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+HTTPS
+REMOTE_ADDR => 186.185.227.199
+REMOTE_HOST
+REMOTE_PORT => 25909
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 7:31 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501416076
+REQUEST_TIME_FLOAT => 1501416076.882
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0
+HTTPS
+REMOTE_ADDR => 192.168.1.101
+REMOTE_HOST
+REMOTE_PORT => 49674
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 7:31 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501416076
+REQUEST_TIME_FLOAT => 1501416076.879
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0
+HTTPS
+REMOTE_ADDR => 192.168.1.101
+REMOTE_HOST
+REMOTE_PORT => 49673
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 7:52 am
+Attempt: Failed
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => ::1
+SERVER_NAME => localhost
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501417334
+REQUEST_TIME_FLOAT => 1501417334.811
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE => es,en;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => localhost:8080
+HTTP_REFERER => http://localhost:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => ::1
+REMOTE_HOST
+REMOTE_PORT => 52510
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 7:52 am
+Attempt: Failed
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => ::1
+SERVER_NAME => localhost
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501417334
+REQUEST_TIME_FLOAT => 1501417334.8
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE => es,en;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => localhost:8080
+HTTP_REFERER => http://localhost:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => ::1
+REMOTE_HOST
+REMOTE_PORT => 52509
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 7:52 am
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => ::1
+SERVER_NAME => localhost
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501417337
+REQUEST_TIME_FLOAT => 1501417337.604
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE => es,en;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => localhost:8080
+HTTP_REFERER => http://localhost:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => ::1
+REMOTE_HOST
+REMOTE_PORT => 52509
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 7:52 am
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => ::1
+SERVER_NAME => localhost
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501417337
+REQUEST_TIME_FLOAT => 1501417337.62
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE => es,en;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => localhost:8080
+HTTP_REFERER => http://localhost:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => ::1
+REMOTE_HOST
+REMOTE_PORT => 52510
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 8:37 am
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501420062
+REQUEST_TIME_FLOAT => 1501420062.184
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+HTTPS
+REMOTE_ADDR => 190.198.31.107
+REMOTE_HOST
+REMOTE_PORT => 49231
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 8:37 am
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501420062
+REQUEST_TIME_FLOAT => 1501420062.184
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+HTTPS
+REMOTE_ADDR => 190.198.31.107
+REMOTE_HOST
+REMOTE_PORT => 49230
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 9:06 am
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501421805
+REQUEST_TIME_FLOAT => 1501421805.201
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-US,es-419;q=0.8,es;q=0.6
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Linux; Android 5.0; BLU STUDIO C 5+5 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+HTTPS
+REMOTE_ADDR => 186.167.242.244
+REMOTE_HOST
+REMOTE_PORT => 30178
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 9:06 am
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501421806
+REQUEST_TIME_FLOAT => 1501421806.584
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-US,es-419;q=0.8,es;q=0.6
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Linux; Android 5.0; BLU STUDIO C 5+5 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+HTTPS
+REMOTE_ADDR => 186.167.242.244
+REMOTE_HOST
+REMOTE_PORT => 13687
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 9:07 am
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501421846
+REQUEST_TIME_FLOAT => 1501421846.023
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-US,es-419;q=0.8,es;q=0.6
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Linux; Android 5.0; BLU STUDIO C 5+5 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+HTTPS
+REMOTE_ADDR => 186.167.242.244
+REMOTE_HOST
+REMOTE_PORT => 3247
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:07 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501425457
+REQUEST_TIME_FLOAT => 1501425457.847
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0
+HTTPS
+REMOTE_ADDR => 190.78.16.20
+REMOTE_HOST
+REMOTE_PORT => 49548
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:07 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501425457
+REQUEST_TIME_FLOAT => 1501425457.872
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0
+HTTPS
+REMOTE_ADDR => 190.78.16.20
+REMOTE_HOST
+REMOTE_PORT => 49549
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:22 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501426378
+REQUEST_TIME_FLOAT => 1501426378.213
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.101
+REMOTE_HOST
+REMOTE_PORT => 49922
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:22 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501426378
+REQUEST_TIME_FLOAT => 1501426378.217
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.101
+REMOTE_HOST
+REMOTE_PORT => 49923
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:23 am
+Attempt: Failed
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501426407
+REQUEST_TIME_FLOAT => 1501426407.294
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 190.78.16.20
+REMOTE_HOST
+REMOTE_PORT => 49602
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:23 am
+Attempt: Failed
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501426407
+REQUEST_TIME_FLOAT => 1501426407.297
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 190.78.16.20
+REMOTE_HOST
+REMOTE_PORT => 49603
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:23 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501426414
+REQUEST_TIME_FLOAT => 1501426414.212
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 190.78.16.20
+REMOTE_HOST
+REMOTE_PORT => 49613
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:23 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 190.78.16.20
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501426414
+REQUEST_TIME_FLOAT => 1501426414.247
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 190.78.16.20:8080
+HTTP_REFERER => http://190.78.16.20:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 190.78.16.20
+REMOTE_HOST
+REMOTE_PORT => 49614
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:24 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501426474
+REQUEST_TIME_FLOAT => 1501426474.113
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.107
+REMOTE_HOST
+REMOTE_PORT => 49639
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:24 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501426474
+REQUEST_TIME_FLOAT => 1501426474.101
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.107
+REMOTE_HOST
+REMOTE_PORT => 49638
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:33 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501427009
+REQUEST_TIME_FLOAT => 1501427009.444
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-419,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.102
+REMOTE_HOST
+REMOTE_PORT => 49829
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:33 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501427009
+REQUEST_TIME_FLOAT => 1501427009.442
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-419,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.102
+REMOTE_HOST
+REMOTE_PORT => 49831
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:53 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501428235
+REQUEST_TIME_FLOAT => 1501428235.946
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.108
+REMOTE_HOST
+REMOTE_PORT => 49450
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:53 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501428235
+REQUEST_TIME_FLOAT => 1501428235.949
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.108
+REMOTE_HOST
+REMOTE_PORT => 49451
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:53 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501428238
+REQUEST_TIME_FLOAT => 1501428238.631
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.108
+REMOTE_HOST
+REMOTE_PORT => 49451
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:53 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501428238
+REQUEST_TIME_FLOAT => 1501428238.637
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.108
+REMOTE_HOST
+REMOTE_PORT => 49453
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:54 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501428253
+REQUEST_TIME_FLOAT => 1501428253.775
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0
+HTTPS
+REMOTE_ADDR => 192.168.1.101
+REMOTE_HOST
+REMOTE_PORT => 49342
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:54 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501428253
+REQUEST_TIME_FLOAT => 1501428253.735
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0
+HTTPS
+REMOTE_ADDR => 192.168.1.101
+REMOTE_HOST
+REMOTE_PORT => 49341
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:57 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501428451
+REQUEST_TIME_FLOAT => 1501428451.572
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.107
+REMOTE_HOST
+REMOTE_PORT => 49304
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 10:57 am
+Attempt: Success
+User: juan@j.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501428451
+REQUEST_TIME_FLOAT => 1501428451.581
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.107
+REMOTE_HOST
+REMOTE_PORT => 49303
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 12:40 pm
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501434616
+REQUEST_TIME_FLOAT => 1501434616.923
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0
+HTTPS
+REMOTE_ADDR => 192.168.1.101
+REMOTE_HOST
+REMOTE_PORT => 50257
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 12:40 pm
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501434616
+REQUEST_TIME_FLOAT => 1501434616.927
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0
+HTTPS
+REMOTE_ADDR => 192.168.1.101
+REMOTE_HOST
+REMOTE_PORT => 50258
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 1:11 pm
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501436472
+REQUEST_TIME_FLOAT => 1501436472.689
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-419,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.102
+REMOTE_HOST
+REMOTE_PORT => 49930
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 1:11 pm
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => 192.168.1.105
+SERVER_NAME => 192.168.1.105
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501436472
+REQUEST_TIME_FLOAT => 1501436472.693
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate
+HTTP_ACCEPT_LANGUAGE => es-419,es;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => 192.168.1.105:8080
+HTTP_REFERER => http://192.168.1.105:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => 192.168.1.102
+REMOTE_HOST
+REMOTE_PORT => 49931
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 2:54 pm
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => ::1
+SERVER_NAME => localhost
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501442655
+REQUEST_TIME_FLOAT => 1501442655.748
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE => es,en;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => localhost:8080
+HTTP_REFERER => http://localhost:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => ::1
+REMOTE_HOST
+REMOTE_PORT => 54492
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 2:54 pm
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => ::1
+SERVER_NAME => localhost
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501442655
+REQUEST_TIME_FLOAT => 1501442655.747
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE => es,en;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => localhost:8080
+HTTP_REFERER => http://localhost:8080/SUAHVI/index.php
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => ::1
+REMOTE_HOST
+REMOTE_PORT => 54491
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 3:02 pm
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => ::1
+SERVER_NAME => localhost
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501443134
+REQUEST_TIME_FLOAT => 1501443134.942
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE => es,en;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => localhost:8080
+HTTP_REFERER => http://localhost:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => ::1
+REMOTE_HOST
+REMOTE_PORT => 54829
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
+Fecha Acceso:July 30, 2017, 3:02 pm
+Attempt: Success
+User: davimurillo@gmail.com
+-------------------------
+PHP_SELF => /SUAHVI/modulos/login.php
+argv
+argc
+GATEWAY_INTERFACE => CGI/1.1
+SERVER_ADDR => ::1
+SERVER_NAME => localhost
+SERVER_SOFTWARE => Apache/2.4.6 (Win32) PHP/5.4.17
+SERVER_PROTOCOL => HTTP/1.1
+REQUEST_METHOD => POST
+REQUEST_TIME => 1501443134
+REQUEST_TIME_FLOAT => 1501443134.961
+QUERY_STRING => 
+DOCUMENT_ROOT => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root
+HTTP_ACCEPT => text/html, */*; q=0.01
+HTTP_ACCEPT_CHARSET
+HTTP_ACCEPT_ENCODING => gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE => es,en;q=0.8
+HTTP_CONNECTION => keep-alive
+HTTP_HOST => localhost:8080
+HTTP_REFERER => http://localhost:8080/SUAHVI/
+HTTP_USER_AGENT => Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+HTTPS
+REMOTE_ADDR => ::1
+REMOTE_HOST
+REMOTE_PORT => 54830
+REMOTE_USER
+REDIRECT_REMOTE_USER
+SCRIPT_FILENAME => C:/Users/lapto_admin/Documents/revisar/USBWebserver v8.6/root/SUAHVI/modulos/login.php
+SERVER_ADMIN => mail@localhost
+SERVER_PORT => 8080
+SERVER_SIGNATURE => 
+PATH_TRANSLATED
+SCRIPT_NAME => /SUAHVI/modulos/login.php
+REQUEST_URI => /SUAHVI/modulos/login.php
+PHP_AUTH_DIGEST
+PHP_AUTH_USER
+PHP_AUTH_PW
+AUTH_TYPE
+PATH_INFO
+ORIG_PATH_INFO
+
