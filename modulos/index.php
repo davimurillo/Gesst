@@ -1,4 +1,13 @@
- <?php require_once('common.php'); checkUser(); ?>
+<?php 
+/*
+Sistema: Gessalud
+Author: Davi Murillo
+Description: Sistema de Seguridad y Salud Ocupacional.
+Version: 1.0
+Tags: seguridad, salud, ocupacional, PAVH, IPER
+*/
+require_once('common.php'); checkUser(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +26,7 @@
       <link rel="stylesheet" type="text/css" href="asset/css/plugins/fullcalendar.min.css"/>
 	 
 	<!-- end: Css -->
-	<link rel="shortcut icon" href="asset/img/logomi.png">
+	<link rel="shortcut icon" href="../img/logos/logo.png">
 	<style>
 		body {
 		  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
