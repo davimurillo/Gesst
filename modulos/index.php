@@ -24,7 +24,6 @@ require_once('common.php'); checkUser();
       <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
       <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
       <link rel="stylesheet" type="text/css" href="asset/css/plugins/fullcalendar.min.css"/>
-	 
 	<!-- end: Css -->
 	<link rel="shortcut icon" href="../img/logos/logo.png">
 	<style>
@@ -57,7 +56,6 @@ require_once('common.php'); checkUser();
 			position: relative;
 			margin-left: -2px;
 			width:300px;
-			
 		}
 		#left-menu .sub-left-menu {
 		  background-color: #fff;
@@ -135,6 +133,9 @@ require_once('common.php'); checkUser();
 		.logo{
 			margin: 10px 5px 0px 20px;
 		}
+		.titulo_logo{
+			margin: 10px 5px 0px 20px;
+		}
 		.inputsearch{
 			margin: 8px 0px 8px 0px;
 			width:96%
@@ -143,7 +144,7 @@ require_once('common.php'); checkUser();
   </head>
  <body id="mimin" class="dashboard">
       <div class="cabecera"> 
-		<div class="logo"><img src="../img/logos/logo.png"> GESSTRAB v 1.0</div>
+		<div class="logo"><img src="../img/logos/logo.png"> <span class="titulo_logo">GESSTRAB v 1.0</span></div>
 	  </div>
 	   <div class="container-fluid mimin-wrapper">
 		  <div class="izquierdo" > 
@@ -158,31 +159,17 @@ require_once('common.php'); checkUser();
 						<li class="ripple" >
 						 <input class="form-control inputsearch" placeholder="Buscar">
 						</li>
+						<?php 
+							 $sql="SELECT tx_modulo, tx_ruta, tx_icono FROM cfg_modulo ORDER BY n_orden";
+							$res=abredatabase(g_BaseDatos,$sql);
+							while ($row=dregistro($res)){
+						?>
 						<li class="ripple" >
-						  <a href="index.php" class=" nav-header"><span class="icons icon-screen-desktop"></span> Dashboard 
-						  </a>
+						  <a href="<?php echo $row['tx_ruta']; ?>" class="nav-header"><span class="<?php echo $row['tx_icono']; ?>"></span> <?php echo $row['tx_modulo']; ?> </a>
 						</li>
-						<li class="ripple">
-						  <a class="tree-toggle nav-header">
-							<span class="icons  icon-grid"></span> Empresa
-						  </a>
-						</li>					
-					   <li class="ripple">
-						  <a class="tree-toggle nav-header">
-							<span class="icons icon-grid"></span> PHVA
-						  </a>
-						</li>
-						<li class="ripple">
-						  <a class="tree-toggle nav-header">
-							<span class="icons icon-printer"></span> Reportes
-						  </a>
-						</li>
-						<li class="ripple">
-						  <a class="tree-toggle nav-header">
-							<span class="icons icon-grid"></span> Configurar
-						  </a>
-						</li>
-						<li><a href="credits.html"> <span class="icons icon-question"></span> Ayuda</a></li>
+						<?php 
+							}
+						?>
 					  </ul>
 					</div>
 				</div>
