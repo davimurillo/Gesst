@@ -30,7 +30,7 @@
 	  <!-- end: Header -->
     <div class="container-fluid mimin-wrapper">
            <!-- start:Left Menu -->
-		     <?php require("cfg_menu_izquierdo.php"); ?>
+		   
 		    <!-- end:Left Menu -->
           <!-- start: content -->
         <div id="content">
@@ -189,6 +189,12 @@
 					## +---------------------------------------------------------------------------+
 					##  ***  set settings for edit/details mode
 					
+					//*****ARREGLO ******//
+					$tema_array_sql = "SELECT tx_modulo, id_modulo FROM cfg_modulo WHERE id_modulo_padre=0 ORDER BY n_orden";
+					$especial_array_str = crearArregloDataGrid($tema_array_sql,"modulo_array",g_BaseDatos);
+					eval($especial_array_str);	
+					//******FIN DE ARREGLO *****///
+					
 					 $estatus=array(""=>"SELECCIONE","1"=>"ACTIVO", "0"=>"INACTIVO");
 					  $table_name = "cfg_modulo";
 					  $primary_key = "id_modulo";
@@ -196,12 +202,14 @@
 					  $dgrid->setTableEdit($table_name, $primary_key, $condition);
 					  $dgrid->setAutoColumnsInEditMode(false);
 					   $em_columns = array(
-						"tx_modulo" =>array("header"=>"MODULO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+					   "id_modulo_padre" =>array("header"=>"MODULO", "type"=>"enum",  "source"=>$modulo_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"sy", "title"=>"", "unique"=>false, "default"=>"0"),
+						"tx_modulo" =>array("header"=>"NOMBRE", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_descripcion" =>array("header"=>"DESCRIPCIÓN", "type"=>"textarea", "width"=>"100%", "req_type"=>"sty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_ruta" =>array("header"=>"RUTA", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_icono" =>array("header"=>"ICONO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"n_orden" =>array("header"=>"ORDEN", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"id_estatu" =>array("header"=>"ESTATUS", "type"=>"enum",  "source"=>$estatus, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
-						"id_useact" =>array("header"=>"",       "type"=>"hidden",    "req_type"=>"sny", "default"=>$_SESSION['id_usuario'], "visible"=>"false", "unique"=>false)
+						"id_estatu" =>array("header"=>"ESTATUS", "type"=>"enum",  "source"=>$estatus, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1")
+						
 					  );
 					$dgrid->setColumnsInEditMode($em_columns);
 					##  *** set auto-genereted eName_1.FieldName > 'a' AND TableName_1.FieldName < 'c'"

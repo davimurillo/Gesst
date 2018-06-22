@@ -1,4 +1,4 @@
- <?php require_once('common.php'); checkUser(); ?>
+<?php $dir="../"; require_once('../common.php'); checkUser(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +9,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gessalud</title>
     <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
       <!-- plugins -->
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/font-awesome.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/fullcalendar.min.css"/>
-	<link href="asset/css/style.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/simple-line-icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/animate.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/fullcalendar.min.css"/>
+	<link href="../../assets/css/style.css" rel="stylesheet">
 	<!-- end: Css -->
-	<link rel="shortcut icon" href="asset/img/logomi.png">
+	<link rel="shortcut icon" href="../../assets/img/logomi.png">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -26,11 +26,11 @@
   </head>
  <body id="mimin" class="dashboard">
       <!-- start: Header -->
-			  <?php require("cfg_cabecera.php"); ?>
+			  <?php require("../cfg_cabecera.php"); ?>
 	  <!-- end: Header -->
     <div class="container-fluid mimin-wrapper">
            <!-- start:Left Menu -->
-		     <?php require("cfg_menu_izquierdo.php"); ?>
+		     <?php require("../cfg_menu_izquierdo.php"); ?>
 		    <!-- end:Left Menu -->
           <!-- start: content -->
         <div id="content">
@@ -54,8 +54,8 @@
 					## | 1. Creating & Calling:                                                    | 
 					## +---------------------------------------------------------------------------+
 					##  *** only relative (virtual) path (to the current document)
-					  define ("DATAGRID_DIR", "../lib/datagrid/");
-					  define ("PEAR_DIR", "../lib/datagrid/pear/");
+					  define ("DATAGRID_DIR", "../../lib/datagrid/");
+					  define ("PEAR_DIR", "../../lib/datagrid/pear/");
 					  require_once(DATAGRID_DIR.'datagrid.class.php');
 					  require_once(PEAR_DIR.'PEAR.php');
 					  require_once(PEAR_DIR.'DB.php');
@@ -235,22 +235,22 @@
     </div>
           <!-- end: content -->
     <!-- start: right menu -->
-		<?php require('cfg_menu_derecho.php'); ?>
+		
 	<!-- end: right menu -->
       <!-- start: Mobile -->
-			<?php require('cfg_menu_movil.php'); ?>
+			
        <!-- end: Mobile -->
     <!-- start: Javascript -->
-    <script src="asset/js/jquery.min.js"></script>
-    <script src="asset/js/jquery.ui.min.js"></script>
-    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.ui.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
     <!-- plugins -->
-    <script src="asset/js/plugins/moment.min.js"></script>
-    <script src="asset/js/plugins/jquery.nicescroll.js"></script>
-    <script src="asset/js/plugins/jquery.mask.min.js"></script>
-	<script src="asset/js/plugins/jquery.validate.min.js"></script>
+    <script src="../../assets/js/plugins/moment.min.js"></script>
+    <script src="../../assets/js/plugins/jquery.nicescroll.js"></script>
+    <script src="../../assets/js/plugins/jquery.mask.min.js"></script>
+	<script src="../../assets/js/plugins/jquery.validate.min.js"></script>
     <!-- custom -->
-     <script src="asset/js/main.js"></script>
+     <script src="../../assets/js/main.js"></script>
      <script type="text/javascript">
       (function(jQuery){
 		 $('.mask-phone_us').mask('(000) 000-00.00.00');

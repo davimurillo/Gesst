@@ -18,12 +18,13 @@ require_once('common.php'); checkUser();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gesstrab</title>
     <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <!-- plugins -->
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/font-awesome.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/fullcalendar.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../assets/css/plugins/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../assets/css/plugins/simple-line-icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../assets/css/plugins/animate.min.css"/>
 	<!-- end: Css -->
 	<link rel="shortcut icon" href="../img/logos/logo.png">
 	<style>
@@ -73,10 +74,13 @@ require_once('common.php'); checkUser();
 		}
 		#left-menu .sub-left-menu a {
 		  color: #918C8C;
-		  font-Size: 16px;
+		  font-size: 12px;
 		  font-weight: 500;
 		  line-height: 30px;
 		}
+		
+		
+		
 		#left-menu .sub-left-menu .time h1 {
 		  font-weight: 500;
 		  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -104,6 +108,7 @@ require_once('common.php'); checkUser();
 		#left-menu .sub-left-menu li {
 		  line-height: 44px;
 		  padding-left:10px;
+		  font-size: 16px;
 		  border-bottom: 1px solid #ccc;
 		}
 		#content {
@@ -160,14 +165,32 @@ require_once('common.php'); checkUser();
 						 <input class="form-control inputsearch" placeholder="Buscar">
 						</li>
 						<?php 
-							 $sql="SELECT tx_modulo, tx_ruta, tx_icono FROM cfg_modulo ORDER BY n_orden";
+							 $c=0;
+							 $sql="SELECT a.tx_modulo,CASE WHEN (b.tx_modulo) <> '' THEN b.tx_modulo ELSE '#' END sub_modulos ,CASE WHEN(SELECT count(id_modulo) FROM cfg_modulo WHERE id_modulo_padre=a.id_modulo)>0 THEN  'SUB-MODULO' ELSE 'MODULO' END  AS TIPO, a.n_orden, b.tx_ruta, a.tx_icono, b.tx_icono  as icon_modulo FROM cfg_modulo a LEFT JOIN cfg_modulo b ON b.id_modulo_padre=a.id_modulo WHERE a.id_modulo_padre=0 ORDER BY a.n_orden, b.n_orden ";
 							$res=abredatabase(g_BaseDatos,$sql);
 							while ($row=dregistro($res)){
-						?>
-						<li class="ripple" >
-						  <a href="<?php echo $row['tx_ruta']; ?>" class="nav-header"><span class="<?php echo $row['tx_icono']; ?>"></span> <?php echo $row['tx_modulo']; ?> </a>
-						</li>
-						<?php 
+								if ($row['tipo']=='MODULO'){
+									$c=0;
+							?>
+								<li class="ripple" >
+								 <a href="<?php echo $row['tx_ruta']; ?>" style="font-size:16px; padding-left:-10px">
+									<span class="<?php echo $row['tx_icono']; ?>"></span> <?php echo $row['tx_modulo']; ?> 
+								</a>
+								</li>
+							<?php
+								}else
+								{
+								if ($c==0){
+							?>
+									<li class="ripple" data-toggle="collapse" data-target="#demo">
+									 <span class="<?php echo $row['tx_icono']; ?>"></span> <?php echo $row['tx_modulo']; ?> 
+									</li>
+								<?php $c=1; } ?>
+								<li class="ripple" id="demo" class="collapse">
+								  <a href="<?php echo $row['tx_ruta']; ?>" class="nav-sub-modulo"><span class="<?php echo $row['icon_modulo']; ?>"></span> <?php echo $row['sub_modulos']; ?> </a>
+								</li>
+							<?php
+								}
 							}
 						?>
 					  </ul>
