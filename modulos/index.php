@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php 
 /*
 Sistema: Gessalud
@@ -8,8 +10,6 @@ Tags: seguridad, salud, ocupacional, PAVH, IPER
 */
 require_once('common.php'); checkUser(); 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Salud, Trabajo, Ocupación, Seguridad">
@@ -18,186 +18,22 @@ require_once('common.php'); checkUser();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gesstrab</title>
     <!-- start: Css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
       <!-- plugins -->
       <link rel="stylesheet" type="text/css" href="../assets/css/plugins/font-awesome.min.css"/>
       <link rel="stylesheet" type="text/css" href="../assets/css/plugins/simple-line-icons.css"/>
       <link rel="stylesheet" type="text/css" href="../assets/css/plugins/animate.min.css"/>
 	<!-- end: Css -->
 	<link rel="shortcut icon" href="../img/logos/logo.png">
-	<style>
-		body {
-		  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-		  font-size: 13px;
-		  background-color:#f0f3f4;
-		  line-height: 1.42857143 !important;
-		  color: #58666e !important;
-		}
-		.cabecera{
-			width: 100%;
-			height: 60px;
-			color:#ccc; font-size: 12px;  
-			background-color:#333;
-			-moz-border-radius: 2px;
-			-webkit-border-radius: 2px;
-			border-radius: 2px;
-			-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-			-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-			position: fixed;
-		}
-		.izquierdo{
-			margin-top:61px;
-		}
-		.sub-left-menu{
-			height: 100px;
-			left: 0;
-			position: relative;
-			margin-left: -2px;
-			width:300px;
-		}
-		#left-menu .sub-left-menu {
-		  background-color: #fff;
-		  z-index: 222;
-		  left:0px;
-		  width: 230px;
-		  height: 100%;
-		  position: fixed;
-		  overflow-y: auto;
-		  -webkit-box-shadow: 0 2px 5px 0 rgba(239, 235, 235, 0.16), 0 2px 10px 0 rgba(72, 70, 70, 0.12);
-		  -moz-box-shadow: 0 2px 5px 0 rgba(239, 235, 235, 0.16), 0 2px 10px 0 rgba(72, 70, 70, 0.12);
-		  -ms-box-shadow: 0 2px 5px 0 rgba(239, 235, 235, 0.16), 0 2px 10px 0 rgba(72, 70, 70, 0.12);
-		  -o-box-shadow: 0 2px 5px 0 rgba(239, 235, 235, 0.16), 0 2px 10px 0 rgba(72, 70, 70, 0.12);
-		  box-shadow: 0 2px 5px 0 rgba(239, 235, 235, 0.16), 0 2px 10px 0 rgba(72, 70, 70, 0.12);
-		}
-		#left-menu .sub-left-menu a {
-		  color: #918C8C;
-		  font-size: 12px;
-		  font-weight: 500;
-		  line-height: 30px;
-		}
-		
-		
-		
-		#left-menu .sub-left-menu .time h1 {
-		  font-weight: 500;
-		  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		  font-size: 50px;
-		  text-align: center;
-		  color: #918C8C;
-		}
-		#left-menu .sub-left-menu .time p {
-		  margin-top: -25px;
-		  text-align: center;
-		  font-size: 12px;
-		  color: #918C8C;
-		}
-		#left-menu .sub-left-menu li ripple:hover {
-		  background: #ccc;
-		  -webkit-text-decoration: none;
-		  -moz-text-decoration: none;
-		  -ms-text-decoration: none;
-		  -o-text-decoration: none;
-		  text-decoration: none;
-		}
-		#left-menu .sub-left-menu span {
-		  padding-right: 10px;
-		}
-		#left-menu .sub-left-menu li {
-		  line-height: 44px;
-		  padding-left:10px;
-		  font-size: 16px;
-		  border-bottom: 1px solid #ccc;
-		}
-		#content {
-		  margin-top: 51px;
-		  padding: 0px;
-		  padding-bottom: 10px;
-		  padding-left: 230px;
-		  width: 100%;
-		  color: #918C8C;
-		}
-		a,
-		a:hover {
-		  -webkit-text-decoration: none;
-		  -moz-text-decoration: none;
-		  -ms-text-decoration: none;
-		  -o-text-decoration: none;
-		  text-decoration: none;
-		  color: #888;
-		  font-weight: bold;
-		}
-		a h1{
-			 font-Size: 2em;
-		}
-		a p{
-			 font-Size: 0.9em;
-		}
-		.logo{
-			margin: 10px 5px 0px 20px;
-		}
-		.titulo_logo{
-			margin: 10px 5px 0px 20px;
-		}
-		.inputsearch{
-			margin: 8px 0px 8px 0px;
-			width:96%
-		}
-	</style>
+
   </head>
  <body id="mimin" class="dashboard">
-      <div class="cabecera"> 
-		<div class="logo"><img src="../img/logos/logo.png"> <span class="titulo_logo">GESSTRAB v 1.0</span></div>
-	  </div>
+      <?php require("cabecera.php"); ?>
 	   <div class="container-fluid mimin-wrapper">
-		  <div class="izquierdo" > 
-			<div class="menu">
-				<div id="left-menu">
-				  <div class="sub-left-menu" >
-					<ul class="nav nav-list scroll ">
-						<li class="time">
-						  <h1 class="animated fadeInLeft" style="font-size:50px">21:00</h1>
-						  <p class="animated fadeInRight">Sat,October 1st 2029</p>
-						</li>
-						<li class="ripple" >
-						 <input class="form-control inputsearch" placeholder="Buscar">
-						</li>
-						<?php 
-							 $c=0;
-							 $sql="SELECT a.tx_modulo,CASE WHEN (b.tx_modulo) <> '' THEN b.tx_modulo ELSE '#' END sub_modulos ,CASE WHEN(SELECT count(id_modulo) FROM cfg_modulo WHERE id_modulo_padre=a.id_modulo)>0 THEN  'SUB-MODULO' ELSE 'MODULO' END  AS TIPO, a.n_orden, b.tx_ruta, a.tx_icono, b.tx_icono  as icon_modulo FROM cfg_modulo a LEFT JOIN cfg_modulo b ON b.id_modulo_padre=a.id_modulo WHERE a.id_modulo_padre=0 ORDER BY a.n_orden, b.n_orden ";
-							$res=abredatabase(g_BaseDatos,$sql);
-							while ($row=dregistro($res)){
-								if ($row['tipo']=='MODULO'){
-									$c=0;
-							?>
-								<li class="ripple" >
-								 <a href="<?php echo $row['tx_ruta']; ?>" style="font-size:16px; padding-left:-10px">
-									<span class="<?php echo $row['tx_icono']; ?>"></span> <?php echo $row['tx_modulo']; ?> 
-								</a>
-								</li>
-							<?php
-								}else
-								{
-								if ($c==0){
-							?>
-									<li class="ripple" data-toggle="collapse" data-target="#demo">
-									 <span class="<?php echo $row['tx_icono']; ?>"></span> <?php echo $row['tx_modulo']; ?> 
-									</li>
-								<?php $c=1; } ?>
-								<li class="ripple" id="demo" class="collapse">
-								  <a href="<?php echo $row['tx_ruta']; ?>" class="nav-sub-modulo"><span class="<?php echo $row['icon_modulo']; ?>"></span> <?php echo $row['sub_modulos']; ?> </a>
-								</li>
-							<?php
-								}
-							}
-						?>
-					  </ul>
-					</div>
-				</div>
-			</div>
-		  </div>
+		   <?php require("menu_izquierdo.php"); ?>
 		  <div id="content">
             <div class="col-md-12" style="padding:20px; ">
 				<div class="col-md-12 padding-0">

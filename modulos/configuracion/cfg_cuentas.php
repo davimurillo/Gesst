@@ -1,80 +1,69 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>APICES|Control de Inventarios</title>
-  <link href="../img/logos/apices.png" rel="shortcut icon" type="image/x-icon" />
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
- 
-</head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
-  
+<html lang="en">
 <?php 
-
-require_once('common.php'); checkUser(); 
-
-
+/*
+Sistema: Gessalud
+Author: Davi Murillo
+Description: Sistema de Seguridad y Salud Ocupacional.
+Version: 1.0
+Tags: seguridad, salud, ocupacional, PAVH, IPER
+*/
+$dir="../"; require_once('../common.php'); checkUser(); 
 ?>
- <!-- Head app -->
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="author" content="Gessalud">
+	<meta name="keyword" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gesstrab</title>
+    <!-- start: Css -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
+      <!-- plugins -->
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/simple-line-icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/animate.min.css"/>
+	<!-- end: Css -->
+	<link rel="shortcut icon" href="../../img/logos/logo.png">
 
-  <?php require('cfg_cabecera.php'); ?> 
-  
-  <!-- Left side column. contains the logo and sidebar -->
-  
-  <?php $formulario=10; include('cfg_barra_izquierda.php'); ?> 
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Configuración
-        <small>Usuarios</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Configuración</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-		<div align="left" class="col-xs-6">
-		   <form action="cfg_cuentas.php" method="GET">			 
-		   <strong>Buscar Usuario:</strong>
-			<input id="buscar_usuario" name="buscar_usuario" class="form-control" type="text" placeholder="Valor de Busqueda" value=""  >
-		  </form>
-		</div>
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-		<?php require_once('common.php'); checkUser(); //chequeo de usuario entrante 
-
-$mode = (isset($_GET['f_mode'])) ? $_GET['f_mode'] : ""; 
-$rid = (isset($_GET['f_rid'])) ? $_GET['f_rid'] : ""; 
-
-################################################################################   
-## +---------------------------------------------------------------------------+
-## | 1. Creating & Calling:                                                    | 
-## +---------------------------------------------------------------------------+
-##  *** only relative (virtual) path (to the current document)
-  define ("DATAGRID_DIR", g_dir."lib/datagrid/");
-  define ("PEAR_DIR", g_dir."lib/datagrid/pear/");
-  
-  require_once(DATAGRID_DIR.'datagrid.class.php');
-  require_once(PEAR_DIR.'PEAR.php');
+  </head>
+ <body id="mimin" class="dashboard">
+      <!-- start: Header -->
+		<?php require("../cabecera.php"); ?>
+	  <!-- end: Header -->
+    <div class="container-fluid mimin-wrapper">
+           <!-- start:Left Menu -->
+		   <?php require("../menu_izquierdo.php"); ?>
+		    <!-- end:Left Menu -->
+          <!-- start: content -->
+        <div id="content">
+			<div class="panel box-shadow-none content-header">
+                  <div class="panel-body">
+                    <div class="col-md-12">
+                        <h3 class="animated fadeInLeft">Empresa</h3>
+                        <p class="animated fadeInDown">
+                          <a href="index.php">Dashboard</a> <span class="fa-angle-right fa"></span> Datos Generales
+                        </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-12" style="padding:20px;">
+                 <div class="col_lg-12 col-md-12 col-sm-12 col-xs-12">
+					<?php
+					$mode = (isset($_GET['f_mode'])) ? $_GET['f_mode'] : ""; 
+					$rid = (isset($_GET['f_rid'])) ? $_GET['f_rid'] : ""; 
+					################################################################################   
+					## +---------------------------------------------------------------------------+
+					## | 1. Creating & Calling:                                                    | 
+					## +---------------------------------------------------------------------------+
+					##  *** only relative (virtual) path (to the current document)
+					  define ("DATAGRID_DIR", "../../lib/datagrid/");
+					  define ("PEAR_DIR", "../../lib/datagrid/pear/");
+					  require_once(DATAGRID_DIR.'datagrid.class.php');
+					  require_once(PEAR_DIR.'PEAR.php');
   require_once(PEAR_DIR.'DB.php');
 
 ##  *** creating variables that we need for database connection 
@@ -111,7 +100,7 @@ ob_start();
 	
    
 ##  *** set needed options
-  $debug_mode = true;
+  $debug_mode = false;
   $messaging = true;
   $unique_prefix = "f_";  
   $dgrid = new DataGrid($debug_mode, $messaging, $unique_prefix, DATAGRID_DIR);
@@ -476,26 +465,8 @@ $em_columns = array(
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0.0
-    </div>
-    <strong>Copyright &copy; 2017.</strong> All rights
-    reserved.
-  </footer>
-
-  
+ 
 </div>
-<!-- ./wrapper -->
-
-<!-- jQuery 2.2.3 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-
-<!-- Bootstrap 3.3.6 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
@@ -525,7 +496,7 @@ $em_columns = array(
 			$('#myModal_clave').modal('hide');
 		}
 	</script>
-<?php require_once('libreriaSCRIPT.php'); ?>
+
 
 
 

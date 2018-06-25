@@ -7,34 +7,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
    <title>GESSALUD ® </title>
 	<link rel="shortcut icon" href="img/logos/logo.png">
-	
    <!-- Bootstrap core CSS -->
 	<link href="lib/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="lib/css/animate.css" >
 	<link href="lib/fonts/css/font-awesome.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<style>
+		html, body {
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+    #full-screen-background-image {
+        z-index: -999;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+		opacity:0.9
+    }
+
 	</style>
   </head>
   <body  >
-    <div class="container" align="center" style="margin-top:80px" >
-	  <div class="col-lg-4 col-md-4 col-sm-3 col-xs-1"></div>
+	 <img alt="full screen background image" src="img/sistema/background.jpg" id="full-screen-background-image" /> 
+    <div class="container" align="center" style="margin-top:10%" >
+	  <div class="col-lg-4 col-md-4 col-sm-2 col-xs-1"></div>
 	  <form id="form1" action="javascript:iniciar();" data-parsley-validate>
 	  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 animated slideInDown"   >
 		   <div class="row session" style="margin-top:10px; width:320px" >
-				<div class="row" align="center" style="font-size:2.0em; color:#337AB7; margin-top:20px" >
+				<div class="row" align="center" style="color:#999; font-size: 12px; margin-top:20px">
+					CONTROL DE ACCESO
+				</div>
+				<div class="row" align="center" style="font-size:2.0em; color:#337AB7; margin-top:10px; font-weight:bold" >
 					GESSALUD <span style="font-size:0.55em;" >®</span>
 				</div>
-			   <div class="row" align="center" style="font-size:0.9em; color:#999" >
-					Gestión Estrategica de la Seguridad y la Salud Ocupacional
-				</div>
-				<div class="row" align="center" style="color:#ccc; font-size: 12px; margin-top:20px">
-					<img class="logo_login" src="img/logos/logo_gesstrab.png">
-				</div>
-				<div class="row" align="center" style="color:#ccc; font-size: 12px; margin-top:20px">
+				<div class="row" align="center" style="color:#ccc; font-size: 10px; margin-top:30px">
 					<input class="form-control" type="email"  id="correo_usuario" placeholder="Introduzca su correo electrónico" style="width:70%" required="required">
 				</div>
-				<div class="row" align="center" style="color:#ccc; font-size: 12px; margin-top:10px">
+				<div class="row" align="center" style="color:#ccc; font-size: 10px; margin-top:10px">
 					<input class="form-control" type="password" id="clave_usuario" placeholder="Contraseña" style="width:70%" required="required" >
 				</div>
 				<p></p>
