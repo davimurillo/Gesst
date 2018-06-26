@@ -1,14 +1,42 @@
- <?php require_once('common.php'); checkUser(); ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php require("cabecera.php"); ?>
+<?php 
+/*
+Sistema: Gessalud
+Author: Davi Murillo
+Description: Sistema de Seguridad y Salud Ocupacional.
+Version: 1.0
+Tags: seguridad, salud, ocupacional, PAVH, IPER
+*/
+$dir="../"; require_once('../common.php'); checkUser(); 
+?>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="author" content="Gessalud">
+	<meta name="keyword" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gesstrab</title>
+    <!-- start: Css -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
+      <!-- plugins -->
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/simple-line-icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/animate.min.css"/>
+	<!-- end: Css -->
+	<link rel="shortcut icon" href="../../img/logos/logo.png">
+
+  </head>
  <body id="mimin" class="dashboard">
       <!-- start: Header -->
-			  <?php require("cfg_cabecera.php"); ?>
+		<?php require("../cabecera.php"); ?>
 	  <!-- end: Header -->
     <div class="container-fluid mimin-wrapper">
            <!-- start:Left Menu -->
-		     <?php require("cfg_menu_izquierdo_planificar.php"); ?>
+		   <?php require("cfg_menu_izquierdo_planificar.php"); ?>
 		    <!-- end:Left Menu -->
           <!-- start: content -->
         <div id="content">

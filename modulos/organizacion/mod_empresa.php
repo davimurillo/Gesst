@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php $dir="../"; require_once('../common.php'); checkUser(); ?>
+<?php 
+/*
+Sistema: Gessalud
+Author: Davi Murillo
+Description: Sistema de Seguridad y Salud Ocupacional.
+Version: 1.0
+Tags: seguridad, salud, ocupacional, PAVH, IPER
+*/
+$dir="../"; require_once('../common.php'); checkUser(); 
+?>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Miminium Admin Template v.1">
-	<meta name="author" content="Isna Nur Azis">
-	<meta name="keyword" content="">
+	<meta name="description" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="author" content="Gessalud">
+	<meta name="keyword" content="Salud, Trabajo, Ocupación, Seguridad">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gessalud</title>
+    <title>Gesstrab</title>
     <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
       <!-- plugins -->
       <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/font-awesome.min.css"/>
       <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/simple-line-icons.css"/>
       <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/animate.min.css"/>
-      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/fullcalendar.min.css"/>
-	<link href="../../assets/css/style.css" rel="stylesheet">
 	<!-- end: Css -->
-	<link rel="shortcut icon" href="../../assets/img/logomi.png">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<link rel="shortcut icon" href="../../img/logos/logo.png">
+
   </head>
  <body id="mimin" class="dashboard">
       <!-- start: Header -->
-			  <?php require("../cfg_cabecera.php"); ?>
+		<?php require("../cabecera.php"); ?>
 	  <!-- end: Header -->
     <div class="container-fluid mimin-wrapper">
            <!-- start:Left Menu -->
-		     <?php require("../cfg_menu_izquierdo.php"); ?>
+		   <?php require("../menu_izquierdo.php"); ?>
 		    <!-- end:Left Menu -->
           <!-- start: content -->
         <div id="content">
@@ -197,6 +203,11 @@
 					$especial_array_str = crearArregloDataGrid($tema_array_sql,"resolucion_array",g_BaseDatos);
 					eval($especial_array_str);	
 					//******FIN DE ARREGLO *****///
+					//*****ARREGLO ******//
+					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_tipo_empresa ORDER BY tx_tipo";
+					$especial_array_str = crearArregloDataGrid($tema_array_sql,"tipo_empresa_array",g_BaseDatos);
+					eval($especial_array_str);	
+					//******FIN DE ARREGLO *****///
 					 $estatus=array(""=>"SELECCIONE","1"=>"ACTIVA", "0"=>"INACTIVA");
 					  $table_name = "tbl_empresa";
 					  $primary_key = "id_empresa";
@@ -204,6 +215,7 @@
 					  $dgrid->setTableEdit($table_name, $primary_key, $condition);
 					  $dgrid->setAutoColumnsInEditMode(false);
 					   $em_columns = array(
+					   "id_tipo_empresa" =>array("header"=>"TIPO DE EMPRESA", "type"=>"enum",  "source"=>$tipo_empresa_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
 						"tx_ruc" =>array("header"=>"RUC", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_nombre" =>array("header"=>"RAZÓN SOCIAL", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"id_resolucion" =>array("header"=>"RESOLUCIÓN MINISTERIAL", "type"=>"enum",  "source"=>$resolucion_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
@@ -233,29 +245,6 @@
             </div>
         </div>
     </div>
-          <!-- end: content -->
-    <!-- start: right menu -->
-		
-	<!-- end: right menu -->
-      <!-- start: Mobile -->
-			
-       <!-- end: Mobile -->
-    <!-- start: Javascript -->
-    <script src="../../assets/js/jquery.min.js"></script>
-    <script src="../../assets/js/jquery.ui.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <!-- plugins -->
-    <script src="../../assets/js/plugins/moment.min.js"></script>
-    <script src="../../assets/js/plugins/jquery.nicescroll.js"></script>
-    <script src="../../assets/js/plugins/jquery.mask.min.js"></script>
-	<script src="../../assets/js/plugins/jquery.validate.min.js"></script>
-    <!-- custom -->
-     <script src="../../assets/js/main.js"></script>
-     <script type="text/javascript">
-      (function(jQuery){
-		 $('.mask-phone_us').mask('(000) 000-00.00.00');
-      })(jQuery);
-     </script>
-  <!-- end: Javascript -->
+ 
   </body>
 </html>
