@@ -1,71 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	
-	<meta charset="utf-8">
-	<meta name="description" content="Miminium Admin Template v.1">
-	<meta name="author" content="Isna Nur Azis">
-	<meta name="keyword" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gessalud</title>
- 
-    <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
-
-      <!-- plugins -->
-	
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/font-awesome.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/fullcalendar.min.css"/>
-	<link href="asset/css/style.css" rel="stylesheet">
-	
-	
-	<!-- end: Css -->
-
-	<link rel="shortcut icon" href="asset/img/logomi.png">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
- <body id="mimin" class="dashboard">
- 
- <?php 
-
-require_once('common.php'); checkUser(); 
-$sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefono FROM cfg_usuario_telefono WHERE id_usuario=a.id_usuario LIMIT 1) AS telefono, CASE WHEN id_estatu=1 THEN 'Activo' ELSE 'Inactivo' END AS estatus, to_char(fe_ultima_actualizacion, 'DD/MM/YYYY a las HH:MI am') as fecha_actualizacion, (SELECT tx_perfil FROM cfg_perfil WHERE id_perfil=a.id_perfil) AS perfil FROM cfg_usuario a WHERE id_usuario=".$_SESSION['id_usuario'];
-	$res=abredatabase(g_BaseDatos,$sql);
-	$row=dregistro($res);
-	$nombre_usuario=$row['nombre'];
-	$telefono_usuario=$row['telefono'];
-	$estatus_usuario=$row['estatus'];
-	$perfil=$row['perfil'];
-	$fecha_actualizacion=$row['fecha_actualizacion'];
-	$foto=$row['tx_foto_usuario'];
-	cierradatabase();
-	
-	if ($foto==""){
-		$foto="../img/fotos/img.jpg";	
-	}else{
-		$foto="repositorio/fotos_usuario/".$foto;
-	}
-
+<?php 
+/*
+Sistema: Gessalud
+Author: Davi Murillo
+Description: Sistema de Seguridad y Salud Ocupacional.
+Version: 1.0
+Tags: seguridad, salud, ocupacional, PAVH, IPER
+*/
+$dir="../"; require_once('../common.php'); checkUser(); 
 ?>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="author" content="Gessalud">
+	<meta name="keyword" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gesstrab</title>
+    <!-- start: Css -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
+      <!-- plugins -->
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/simple-line-icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/animate.min.css"/>
+	<!-- end: Css -->
+	<link rel="shortcut icon" href="../../img/logos/logo.png">
 
+  </head>
+ <body id="mimin" class="dashboard">
       <!-- start: Header -->
-			  <?php require("cfg_cabecera.php"); ?>
+		<?php require("../cabecera.php"); ?>
 	  <!-- end: Header -->
-
     <div class="container-fluid mimin-wrapper">
-  
            <!-- start:Left Menu -->
-		     <?php require("cfg_menu_izquierdo.php"); ?>
+		   <?php require("../menu_izquierdo.php"); ?>
 		    <!-- end:Left Menu -->
-
-  		
           <!-- start: content -->
         <div id="content">
                 
@@ -178,8 +150,8 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 					## | 1. Creating & Calling:                                                    | 
 					## +---------------------------------------------------------------------------+
 					##  *** only relative (virtual) path (to the current document)
-					  define ("DATAGRID_DIR", "../lib/datagrid/");
-					  define ("PEAR_DIR", "../lib/datagrid/pear/");
+					  define ("DATAGRID_DIR", $dir."../lib/datagrid/");
+					  define ("PEAR_DIR", $dir."../lib/datagrid/pear/");
 					  
 					  require_once(DATAGRID_DIR.'datagrid.class.php');
 					  require_once(PEAR_DIR.'PEAR.php');
