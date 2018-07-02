@@ -38,12 +38,13 @@
 	  <form id="form1" action="javascript:iniciar();" data-parsley-validate>
 	  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 animated slideInDown"   >
 		   <div class="row session" style="margin-top:10px; width:320px" >
-				<div class="row" align="center" style="color:#999; font-size: 12px; margin-top:20px">
-					CONTROL DE ACCESO
-				</div>
 				<div class="row" align="center" style="font-size:2.0em; color:#337AB7; margin-top:10px; font-weight:bold" >
-					GESSALUD <span style="font-size:0.55em;" >®</span>
+					<img src="img/logos/logo_gesstrab.png" >
 				</div>
+				<div class="row" align="center" style="color:#999; font-size: 12px; margin-top:10px">
+					<h4><strong>CONTROL DE ACCESO</strong></h4>
+				</div>
+				
 				<div class="row" align="center" style="color:#ccc; font-size: 10px; margin-top:30px">
 					<input class="form-control" type="email"  id="correo_usuario" placeholder="Introduzca su correo electrónico" style="width:70%" required="required">
 				</div>

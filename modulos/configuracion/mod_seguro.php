@@ -43,7 +43,7 @@ $dir="../"; require_once('../common.php'); checkUser();
 			<div class="panel box-shadow-none content-header">
                   <div class="panel-body">
                     <div class="col-md-12">
-                        <h3 class="animated fadeInLeft">Empresa</h3>
+                        <h3 class="animated fadeInLeft">Seguro</h3>
                         <p class="animated fadeInDown">
                           <a href="index.php">Dashboard</a> <span class="fa-angle-right fa"></span> Datos Generales
                         </p>
@@ -75,7 +75,7 @@ $dir="../"; require_once('../common.php'); checkUser();
 					  $db_conn = DB::factory($DB_BASE); 
 					  $db_conn -> connect(DB::parseDSN($DB_BASE.'://'.$DB_USER.':'.$DB_PASS.'@'.$DB_HOST.'/'.$DB_NAME));
 					##  *** put a primary key on the first place 
-						$sql="SELECT  id_empresa, tx_ruc, tx_nombre, (SELECT tx_tipo FROM vie_actividad_economica WHERE id_tipo_objeto=a.id_tipo_actividad) as actividad, CASE WHEN id_estatus=1 THEN 'ACTIVA' ELSE 'INACTIVA' END AS estatus FROM tbl_empresa a";
+						$sql="SELECT  id_seguro, tx_ruc, tx_nombre, (SELECT tx_tipo FROM vie_tipo_seguro WHERE id_tipo_objeto=a.id_tipo_seguro) as tipo, CASE WHEN id_estatus=1 THEN 'ACTIVA' ELSE 'INACTIVA' END AS estatus FROM mod_seguro a";
 					##  *** set needed options
 					  $debug_mode = false;
 					  $messaging = true;
@@ -185,7 +185,7 @@ $dir="../"; require_once('../common.php'); checkUser();
 						$vm_colimns = array(
 						"tx_ruc"  =>array("header"=>"RUC","header_align"=>"center","type"=>"label", "width"=>"10%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
 						"tx_nombre"  =>array("header"=>"RAZON SOCIAL","header_align"=>"center","type"=>"label", "width"=>"55%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
-						"actividad"  =>array("header"=>"ACTIVIDAD","header_align"=>"center","type"=>"label", "width"=>"35%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
+						"tipo"  =>array("header"=>"TIPO","header_align"=>"center","type"=>"label", "width"=>"35%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
 						"estatus"  =>array("header"=>"ESTATUS","header_align"=>"center","type"=>"label", "width"=>"5%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal")
 					  );
 					  $dgrid->setColumnsInViewMode($vm_colimns);
@@ -193,53 +193,31 @@ $dir="../"; require_once('../common.php'); checkUser();
 					## | 7. Add/Edit/Details Mode settings:                                        | 
 					## +---------------------------------------------------------------------------+
 					##  ***  set settings for edit/details mode
-					//*****ARREGLO ******//
-					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_actividad_economica ORDER BY tx_tipo";
-					$especial_array_str = crearArregloDataGrid($tema_array_sql,"actividad_array",g_BaseDatos);
-					eval($especial_array_str);	
-					//******FIN DE ARREGLO *****///
-					//*****ARREGLO ******//
-					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_resolucion_ministerial ORDER BY tx_tipo";
-					$especial_array_str = crearArregloDataGrid($tema_array_sql,"resolucion_array",g_BaseDatos);
-					eval($especial_array_str);	
-					//******FIN DE ARREGLO *****///
-					//*****ARREGLO ******//
-					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_tipo_empresa";
-					$especial_array_str = crearArregloDataGrid($tema_array_sql,"tipo_empresa_array",g_BaseDatos);
-					eval($especial_array_str);	
-					//******FIN DE ARREGLO *****///
 					
-					//*****ARREGLO ******//
-					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_tipo_empleador";
-					$especial_array_str = crearArregloDataGrid($tema_array_sql,"tipo_empleador_array",g_BaseDatos);
+					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_tipo_seguro";
+					$especial_array_str = crearArregloDataGrid($tema_array_sql,"tipo_seguro_array",g_BaseDatos);
 					eval($especial_array_str);	
 					//******FIN DE ARREGLO *****///
-					
 					 $estatus=array(""=>"SELECCIONE","1"=>"ACTIVA", "0"=>"INACTIVA");
-					  $table_name = "tbl_empresa";
-					  $primary_key = "id_empresa";
+					 $estatus_si_no=array(""=>"SELECCIONE","1"=>"SI", "0"=>"NO");
+					  $table_name = "mod_seguro";
+					  $primary_key = "id_seguro";
 					  $condition = "";
 					  $dgrid->setTableEdit($table_name, $primary_key, $condition);
 					  $dgrid->setAutoColumnsInEditMode(false);
 					   $em_columns = array(
-					   
-					   "id_tipo_empleador" =>array("header"=>"TIPO DE EMPLEADOR", "type"=>"enum",  "source"=>$tipo_empleador_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
-					   
-					   "id_tipo_empresa" =>array("header"=>"TIPO DE EMPRESA", "type"=>"enum",  "source"=>$tipo_empresa_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
+					   "id_tipo_seguro" =>array("header"=>"TIPO DE SEGURO", "type"=>"enum",  "source"=>$tipo_seguro_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
 						"tx_ruc" =>array("header"=>"RUC", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_nombre" =>array("header"=>"RAZÓN SOCIAL", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"id_resolucion" =>array("header"=>"RESOLUCIÓN MINISTERIAL", "type"=>"enum",  "source"=>$resolucion_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
-						"id_tipo_actividad" =>array("header"=>"TIPO DE ACTIVIDAD ECONÓMICA", "type"=>"enum",  "source"=>$actividad_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
-						"tx_descripcion" =>array("header"=>"ACTIVIDAD ECONÓMICA (DETALLADA)", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_descripcion" =>array("header"=>"ACTIVIDAD (DETALLADA)", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_servicios" =>array("header"=>"SERVICIOS (DETALLADA)", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_url" =>array("header"=>"PAGINA WEB", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_direccion" =>array("header"=>"DOMICILIO PRINCIPAL", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_departamento" =>array("header"=>"DEPARTAMENTO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_provincia" =>array("header"=>"PROVINCIA", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_distrito" =>array("header"=>"DISTRITO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_telefono" =>array("header"=>"TELEFONOS (C0D) + NUMERO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_correo_electronico" =>array("header"=>"CORREO ELECTRÓNICO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_telefonos" =>array("header"=>"TELEFONOS (C0D) + NUMERO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_correo" =>array("header"=>"CORREO ELECTRÓNICO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"id_tipo_sctr" =>array("header"=>"CUMPLE CON SCTR", "type"=>"enum",  "source"=>$estatus_si_no, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"SEGURO COMPLEMENTARIO PARA TRABAJO DE RIESGO", "unique"=>false, "default"=>"0"),
 						"id_estatus" =>array("header"=>"ESTATUS", "type"=>"enum",  "source"=>$estatus, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
-						"id_useact" =>array("header"=>"",       "type"=>"hidden",    "req_type"=>"sny", "default"=>$_SESSION['id_usuario'], "visible"=>"false", "unique"=>false)
+						"id_usuario" =>array("header"=>"",       "type"=>"hidden",    "req_type"=>"sny", "default"=>$_SESSION['id_usuario'], "visible"=>"false", "unique"=>false)
 					  );
 					$dgrid->setColumnsInEditMode($em_columns);
 					##  *** set auto-genereted eName_1.FieldName > 'a' AND TableName_1.FieldName < 'c'"

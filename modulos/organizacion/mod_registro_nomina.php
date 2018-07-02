@@ -338,6 +338,22 @@ $dir="../"; require_once('../common.php'); checkUser();
 					
 					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM cfg_tipo_objeto WHERE tx_objeto='ocupacion_trabajador' ORDER BY tx_tipo";
 					$especial_array_str = crearArregloDataGrid($tema_array_sql,"ocupacion_trabajador_array",g_BaseDatos);
+					eval($especial_array_str);
+
+					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_tipo_contrato";
+					$especial_array_str = crearArregloDataGrid($tema_array_sql,"contrato_trabajador_array",g_BaseDatos);
+					eval($especial_array_str);
+					
+					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_tipo_turno_laboral";
+					$especial_array_str = crearArregloDataGrid($tema_array_sql,"turno_trabajador_array",g_BaseDatos);
+					eval($especial_array_str);					
+					
+					$tema_array_sql = "SELECT tx_nombre, id_seguro FROM mod_seguro WHERE id_tipo_seguro=55  AND id_estatus=1 ORDER BY tx_nombre";
+					$especial_array_str = crearArregloDataGrid($tema_array_sql,"seguro_privado_array",g_BaseDatos);
+					eval($especial_array_str);
+					
+					$tema_array_sql = "SELECT tx_nombre, id_seguro FROM mod_seguro WHERE id_tipo_seguro=56  AND id_estatus=1 ORDER BY tx_nombre";
+					$especial_array_str = crearArregloDataGrid($tema_array_sql,"seguro_publico_array",g_BaseDatos);
 					eval($especial_array_str);	
 					
 					//******FIN DE ARREGLO *****///
@@ -365,6 +381,8 @@ $dir="../"; require_once('../common.php'); checkUser();
 										
 						"tx_documento" =>array("header"=>"N° DE DOCUMENTO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						
+						"fe_nacimiento"  =>array("header"=>"FECHA DE NACIMIENTO", "type"=>"date",       "req_type"=>"rt", "width"=>"187px", "title"=>"", "readonly"=>"false", "maxlength"=>"-1", "default"=>"", "unique"=>"false", "unique_condition"=>"", "visible"=>"true", "on_js_event"=>"", "calendar_type"=>"floating"),
+						
 						"id_genero" =>array("header"=>"GENERO DEL TRABAJADOR", "type"=>"enum",  "source"=>$genero, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
 						
 						"id_estado_civil" =>array("header"=>"ESTADO CIVIL DEL TRABAJADOR", "type"=>"enum",  "source"=>$estado_civil_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
@@ -389,18 +407,19 @@ $dir="../"; require_once('../common.php'); checkUser();
 						
 						"id_situacion_academica" =>array("header"=>"SITUACIÓN ACÁDEMICA", "type"=>"enum",  "source"=>$situacion_academica_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
 						
+						"id_tipo_contrato" =>array("header"=>"TIPO DE CONTRATO", "type"=>"enum",  "source"=>$contrato_trabajador_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),"
+						
+						id_turno_laboral" =>array("header"=>"TURNO LABORAL", "type"=>"enum",  "source"=>$turno_trabajador_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
+						
 						"id_categoria_trabajo" =>array("header"=>"CATEGORIA DEL TRABAJADOR", "type"=>"enum",  "source"=>$categoria_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
 						
 						"id_ocupacion" =>array("header"=>"OCUPACIÓN", "type"=>"enum",  "source"=>$ocupacion_trabajador_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
 						
 						"fe_ingreso"  =>array("header"=>"FECHA DE INGRESO", "type"=>"date",       "req_type"=>"rt", "width"=>"187px", "title"=>"", "readonly"=>"false", "maxlength"=>"-1", "default"=>"", "unique"=>"false", "unique_condition"=>"", "visible"=>"true", "on_js_event"=>"", "calendar_type"=>"floating"),
 						
-						"id_segurado" =>array("header"=>"ASEGURADO?", "type"=>"enum",  "source"=>$estatus_decision, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
+						"id_privado" =>array("header"=>"SEGURO PRIVADO", "type"=>"enum",  "source"=>$seguro_privado_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
 						
-						"id_essalud" =>array("header"=>"ESSALUD?", "type"=>"enum",  "source"=>$estatus_decision, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
-						
-						"id_eps" =>array("header"=>"EPS?", "type"=>"enum",  "source"=>$estatus_decision, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
-						
+						"id_publico" =>array("header"=>"SEGURO PUBLICO", "type"=>"enum",  "source"=>$seguro_publico_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
 						
 						"id_estatus" =>array("header"=>"ESTATUS", "type"=>"enum",  "source"=>$estatus, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
 						

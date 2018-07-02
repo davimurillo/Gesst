@@ -158,7 +158,7 @@ $dir="../"; require_once('../common.php'); checkUser();
 							 "pages"=>true, "pages_align"=>"center",
 							 "page_size"=>true, "page_size_align"=>"right");
 					$pages_array = array("10"=>"10", "25"=>"25", "50"=>"50", "100"=>"100", "250"=>"250", "500"=>"500", "1000"=>"1000", "2000"=>"2000");
-					$default_page_size = 10;
+					$default_page_size = 100;
 					$paging_arrows = array("first"=>"|<<", "previous"=>"<<", "next"=>">>", "last"=>">>|");
 					$dgrid->setPagingSettings($bottom_paging, $top_paging, $pages_array, $default_page_size);
 					##
