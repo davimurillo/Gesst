@@ -4,6 +4,7 @@
 	
 		define("g_dir", $dir."../");
 	
+	
 	//-------------------------------------------------------------------------
 	
 	
@@ -14,7 +15,7 @@
 		define("g_Pass", "usbw");
 		define("g_Port", "5432");
 		define("g_ServidorBaseDatos","localhost");
-		define("g_BaseDatos", "GESSALUD");
+		define("g_BaseDatos", "GESSTRAB");
 	
 	//-------------------------------------------------------------------------
 	

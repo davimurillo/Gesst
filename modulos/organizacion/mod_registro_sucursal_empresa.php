@@ -1,80 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	
-	<meta charset="utf-8">
-	<meta name="description" content="Miminium Admin Template v.1">
-	<meta name="author" content="Isna Nur Azis">
-	<meta name="keyword" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gessalud</title>
- 
-    <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
-
-      <!-- plugins -->
-	
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/font-awesome.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/fullcalendar.min.css"/>
-	<link href="asset/css/style.css" rel="stylesheet">
-	
-	
-	<!-- end: Css -->
-
-	<link rel="shortcut icon" href="asset/img/logomi.png">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
- <body id="mimin" class="dashboard">
- 
- <?php 
-
-require_once('common.php'); checkUser(); 
-$sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefono FROM cfg_usuario_telefono WHERE id_usuario=a.id_usuario LIMIT 1) AS telefono, CASE WHEN id_estatu=1 THEN 'Activo' ELSE 'Inactivo' END AS estatus, to_char(fe_ultima_actualizacion, 'DD/MM/YYYY a las HH:MI am') as fecha_actualizacion, (SELECT tx_perfil FROM cfg_perfil WHERE id_perfil=a.id_perfil) AS perfil FROM cfg_usuario a WHERE id_usuario=".$_SESSION['id_usuario'];
-	$res=abredatabase(g_BaseDatos,$sql);
-	$row=dregistro($res);
-	$nombre_usuario=$row['nombre'];
-	$telefono_usuario=$row['telefono'];
-	$estatus_usuario=$row['estatus'];
-	$perfil=$row['perfil'];
-	$fecha_actualizacion=$row['fecha_actualizacion'];
-	$foto=$row['tx_foto_usuario'];
-	cierradatabase();
-	
-	if ($foto==""){
-		$foto="../img/fotos/img.jpg";	
-	}else{
-		$foto="repositorio/fotos_usuario/".$foto;
-	}
-
+<?php 
+/*
+Sistema: Gessalud
+Author: Davi Murillo
+Description: Sistema de Seguridad y Salud Ocupacional.
+Version: 1.0
+Tags: seguridad, salud, ocupacional, PAVH, IPER
+*/
+$dir="../"; require_once('../common.php'); checkUser(); 
 ?>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="author" content="Gessalud">
+	<meta name="keyword" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gesstrab</title>
+    <!-- start: Css -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
+      <!-- plugins -->
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/simple-line-icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/animate.min.css"/>
+	<!-- end: Css -->
+	<link rel="shortcut icon" href="../../img/logos/logo.png">
 
+  </head>
+ <body id="mimin" class="dashboard">
       <!-- start: Header -->
-			  <?php require("cfg_cabecera.php"); ?>
+		<?php require("../cabecera.php"); ?>
 	  <!-- end: Header -->
-
     <div class="container-fluid mimin-wrapper">
-  
            <!-- start:Left Menu -->
-		     <?php require("cfg_menu_izquierdo.php"); ?>
+		   <?php require("../menu_izquierdo.php"); ?>
 		    <!-- end:Left Menu -->
-
-  		
           <!-- start: content -->
         <div id="content">
                 
 			<div class="panel box-shadow-none content-header">
                   <div class="panel-body">
                     <div class="col-md-12">
-                        <h3 class="animated fadeInLeft">Empresa > Sucursal > Áreas</h3>
+                        <h3 class="animated fadeInLeft">Empresa > Sucursal</h3>
                         <p class="animated fadeInDown">
-                          <a href="index.php">Dashboard</a> <span class="fa-angle-right fa"></span>  <a href="mod_registro_empresa.php">Empresa </a> <a href="mod_registro_sucursal_empresa.php">Sucursal </a> <span class="fa-angle-right fa"></span> Áreas
+                          <a href="index.php">Dashboard</a> <span class="fa-angle-right fa"></span>  <a href="mod_registro_empresa.php">Empresa </a> <span class="fa-angle-right fa"></span> Sucursal
                         </p>
                     </div>
                   </div>
@@ -83,7 +55,7 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 			
 			<div class="col_lg-12 col-md-12 col-sm-12 col-xs-12" > 
 			 <label><span class="icons icon-layers"></span> Empresa </label>
-				<select id="tipos" class="form-control" onchange="javascript:location.href='mod_registro_area_sucursal_empresa.php?empresa='+this.value;">
+				<select id="tipos" class="form-control" onchange="javascript:location.href='mod_registro_sucursal_empresa.php?empresa='+this.value;">
 					<option value="0">--Seleccione--</option>
 					<?php 
 					$valor="";
@@ -107,34 +79,6 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 				</select>
 			 </div>
 			 
-			 <div class="col_lg-12 col-md-12 col-sm-12 col-xs-12" > 
-			 <label><span class="icons icon-layers"></span> Sucursal </label>
-				<select id="tipos" class="form-control" onchange="javascript:location.href='mod_registro_area_sucursal_empresa.php?empresa=<?php echo $_GET['empresa']; ?>&sucursal='+this.value;">
-					<option value="0">--Seleccione--</option>
-					<?php 
-					if (isset($_GET['empresa'])){
-					$valor="";
-					$sql="SELECT id_sucursal, tx_sucursal FROM tbl_empresa_sucursal WHERE id_estatus=1 and id_empresa=".$_GET['empresa']." ORDER BY tx_sucursal ";
-					$res=abredatabase(g_BaseDatos,$sql);
-					while ($row=dregistro($res)){
-					if (isset($_GET['sucursal'])){
-						if ($row['id_sucursal']==$_GET['sucursal']){
-							$valor="selected";
-							$descripcion=$row['tx_sucursal'];
-						}else{
-							$valor="";
-							$descripcion="";
-						}
-					}
-					?>
-					<option value="<?php echo $row['id_sucursal']; ?>" <?php echo $valor; ?>><?php echo $row['tx_sucursal']; ?></option>
-					<?php } cierradatabase();
-					}
-					
-					?>
-				</select>
-			 </div>
-			 
 			  <div class="col_lg-12 col-md-12 col-sm-12 col-xs-12">
 				<hr>
 			</div>
@@ -142,7 +86,7 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
             <div class="col-md-12" style="padding:20px;">
                  <div class="col_lg-12 col-md-12 col-sm-12 col-xs-12">
 					<?php
-					if (isset($_GET["empresa"]) && isset($_GET["sucursal"])){
+					if (isset($_GET["empresa"])){
 					$mode = (isset($_GET['f_mode'])) ? $_GET['f_mode'] : ""; 
 					$rid = (isset($_GET['f_rid'])) ? $_GET['f_rid'] : ""; 
 					################################################################################   
@@ -150,8 +94,8 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 					## | 1. Creating & Calling:                                                    | 
 					## +---------------------------------------------------------------------------+
 					##  *** only relative (virtual) path (to the current document)
-					  define ("DATAGRID_DIR", "../lib/datagrid/");
-					  define ("PEAR_DIR", "../lib/datagrid/pear/");
+					  define ("DATAGRID_DIR", $dir."../lib/datagrid/");
+					  define ("PEAR_DIR", $dir."../lib/datagrid/pear/");
 					  
 					  require_once(DATAGRID_DIR.'datagrid.class.php');
 					  require_once(PEAR_DIR.'PEAR.php');
@@ -172,7 +116,7 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 
 					##  *** put a primary key on the first place 
 
-						$sql="SELECT  id_area, tx_area, tx_ubicacion, CASE WHEN id_estatus=1 THEN 'ACTIVA' ELSE 'INACTIVA' END AS estatus FROM tbl_empresa_sucursal_areas a WHERE id_sucursal=".$_GET['sucursal'];
+						$sql="SELECT  id_sucursal, tx_ruc, tx_sucursal, CASE WHEN id_estatus=1 THEN 'ACTIVA' ELSE 'INACTIVA' END AS estatus FROM tbl_empresa_sucursal a WHERE id_empresa=".$_GET['empresa'];
 
 					##  *** set needed options
 					  $debug_mode = false;
@@ -180,7 +124,7 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 					  $unique_prefix = "f_";  
 					  $dgrid = new DataGrid($debug_mode, $messaging, $unique_prefix, DATAGRID_DIR);
 					##  *** set data source with needed options
-					  $default_order_field = "tx_area";
+					  $default_order_field = "tx_sucursal";
 					//  $default_order_field = "direccion,primer_apellido";
 					  $default_order_type = "ASC";
 					  $dgrid->dataSource($db_conn, $sql, $default_order_field, $default_order_type);	    
@@ -221,7 +165,7 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 					 );
 					 $dgrid->setMultirowOperations($multirow_operations); 
 
-					$http_get_vars = array("empresa","sucursal");
+					$http_get_vars = array("empresa");
 					$dgrid->SetHttpGetVars($http_get_vars);
 
 
@@ -309,8 +253,8 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 							
 					 
 						$vm_colimns = array(
-						"tx_area"  =>array("header"=>"NOMBRE DEL ÁREA","header_align"=>"center","type"=>"label", "width"=>"75%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
-						"tx_ubicacion"  =>array("header"=>"UBICACIÓN FÍSICA","header_align"=>"center","type"=>"label", "width"=>"20%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
+						"tx_ruc"  =>array("header"=>"RUC","header_align"=>"center","type"=>"label", "width"=>"10%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
+						"tx_sucursal"  =>array("header"=>"NOMBRE DE LA SUCURSAL","header_align"=>"center","type"=>"label", "width"=>"85%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
 						"estatus"  =>array("header"=>"ESTATUS","header_align"=>"center","type"=>"label", "width"=>"5%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal")
 						
 					  );
@@ -325,20 +269,27 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 				
 					 $estatus=array(""=>"SELECCIONE","1"=>"ACTIVA", "0"=>"INACTIVA");
 					 
-					  $table_name = "tbl_empresa_sucursal_areas";
-					  $primary_key = "id_area";
+					  $table_name = "tbl_empresa_sucursal";
+					  $primary_key = "id_sucursal";
 					  $condition = "";
 					  $dgrid->setTableEdit($table_name, $primary_key, $condition);
 					  $dgrid->setAutoColumnsInEditMode(false);
 					   $em_columns = array(
 						
+						"tx_ruc" =>array("header"=>"RUC", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						
-						"tx_area" =>array("header"=>"NOMBRE DEL ÁREA", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_sucursal" =>array("header"=>"NOMBRE DE LA SUCURSAL", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 										
-						"tx_descripcion" =>array("header"=>"DESCRIPCIÓN", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_actividad_detallada" =>array("header"=>"ACTIVIDAD ECONÓMICA (DETALLADA)", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						
-						"tx_ubicacion" =>array("header"=>"UBICACIÓN", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_direccion" =>array("header"=>"DOMICILIO PRINCIPAL", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						
+						"tx_departamento" =>array("header"=>"DEPARTAMENTO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						
+						"tx_provincia" =>array("header"=>"PROVINCIA", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						
+						"tx_distrito" =>array("header"=>"DISTRITO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+												
 						"tx_telefono" =>array("header"=>"TELEFONOS (C0D) + NUMERO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						
 						"tx_correo_electronico" =>array("header"=>"CORREO ELECTRÓNICO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
@@ -347,7 +298,7 @@ $sql="SELECT (tx_nombre_apellido) as nombre, tx_foto_usuario, (SELECT tx_telefon
 						
 						"id_usuario" =>array("header"=>"",       "type"=>"hidden",    "req_type"=>"sny", "default"=>$_SESSION['id_usuario'], "visible"=>"false", "unique"=>false),
 						
-						"id_sucursal" =>array("header"=>"",       "type"=>"hidden",    "req_type"=>"sty", "default"=>$_GET['sucursal'], "visible"=>"false", "unique"=>false)
+						"id_empresa" =>array("header"=>"",       "type"=>"hidden",    "req_type"=>"sty", "default"=>$_GET['empresa'], "visible"=>"false", "unique"=>false)
 																	
 					  );
 					$dgrid->setColumnsInEditMode($em_columns);

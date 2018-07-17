@@ -1,7 +1,5 @@
 <?php
 @session_start();
-$dir="";
-if(isset($lib)){ $dir.="../"; $lib="../"; }
 require_once($dir."../lib/config.php");
 
 

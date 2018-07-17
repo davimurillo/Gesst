@@ -1,43 +1,49 @@
- <?php require_once('common.php'); checkUser(); ?>
 <!DOCTYPE html>
 <html lang="en">
+<?php 
+/*
+Sistema: Gessalud
+Author: Davi Murillo
+Description: Sistema de Seguridad y Salud Ocupacional.
+Version: 1.0
+Tags: seguridad, salud, ocupacional, PAVH, IPER
+*/
+$dir="../"; require_once('../common.php'); checkUser(); 
+?>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Miminium Admin Template v.1">
-	<meta name="author" content="Isna Nur Azis">
-	<meta name="keyword" content="">
+	<meta name="description" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="author" content="Gessalud">
+	<meta name="keyword" content="Salud, Trabajo, Ocupación, Seguridad">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gessalud</title>
+    <title>Gesstrab</title>
     <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
       <!-- plugins -->
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/font-awesome.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/fullcalendar.min.css"/>
-	<link href="asset/css/style.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/simple-line-icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/animate.min.css"/>
 	<!-- end: Css -->
-	<link rel="shortcut icon" href="asset/img/logomi.png">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<link rel="shortcut icon" href="../../img/logos/logo.png">
+
   </head>
  <body id="mimin" class="dashboard">
       <!-- start: Header -->
-			  <?php require("cfg_cabecera.php"); ?>
+		<?php require("../cabecera.php"); ?>
 	  <!-- end: Header -->
     <div class="container-fluid mimin-wrapper">
            <!-- start:Left Menu -->
-		     <?php require("cfg_menu_izquierdo.php"); ?>
+		   <?php require("../menu_izquierdo.php"); ?>
 		    <!-- end:Left Menu -->
           <!-- start: content -->
         <div id="content">
 			<div class="panel box-shadow-none content-header">
                   <div class="panel-body">
                     <div class="col-md-12">
-                        <h3 class="animated fadeInLeft">Empresa</h3>
+                        <h3 class="animated fadeInLeft">Seguro</h3>
                         <p class="animated fadeInDown">
                           <a href="index.php">Dashboard</a> <span class="fa-angle-right fa"></span> Datos Generales
                         </p>
@@ -54,8 +60,8 @@
 					## | 1. Creating & Calling:                                                    | 
 					## +---------------------------------------------------------------------------+
 					##  *** only relative (virtual) path (to the current document)
-					  define ("DATAGRID_DIR", "../lib/datagrid/");
-					  define ("PEAR_DIR", "../lib/datagrid/pear/");
+					  define ("DATAGRID_DIR", "../../lib/datagrid/");
+					  define ("PEAR_DIR", "../../lib/datagrid/pear/");
 					  require_once(DATAGRID_DIR.'datagrid.class.php');
 					  require_once(PEAR_DIR.'PEAR.php');
 					  require_once(PEAR_DIR.'DB.php');
@@ -69,7 +75,7 @@
 					  $db_conn = DB::factory($DB_BASE); 
 					  $db_conn -> connect(DB::parseDSN($DB_BASE.'://'.$DB_USER.':'.$DB_PASS.'@'.$DB_HOST.'/'.$DB_NAME));
 					##  *** put a primary key on the first place 
-						$sql="SELECT  id_empresa, tx_ruc, tx_nombre, (SELECT tx_tipo FROM vie_actividad_economica WHERE id_tipo_objeto=a.id_tipo_actividad) as actividad, CASE WHEN id_estatus=1 THEN 'ACTIVA' ELSE 'INACTIVA' END AS estatus FROM tbl_empresa a";
+						$sql="SELECT  id_seguro, tx_ruc, tx_nombre, (SELECT tx_tipo FROM vie_tipo_seguro WHERE id_tipo_objeto=a.id_tipo_seguro) as tipo, CASE WHEN id_estatus=1 THEN 'ACTIVA' ELSE 'INACTIVA' END AS estatus FROM mod_seguro a";
 					##  *** set needed options
 					  $debug_mode = false;
 					  $messaging = true;
@@ -179,7 +185,7 @@
 						$vm_colimns = array(
 						"tx_ruc"  =>array("header"=>"RUC","header_align"=>"center","type"=>"label", "width"=>"10%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
 						"tx_nombre"  =>array("header"=>"RAZON SOCIAL","header_align"=>"center","type"=>"label", "width"=>"55%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
-						"actividad"  =>array("header"=>"ACTIVIDAD","header_align"=>"center","type"=>"label", "width"=>"35%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
+						"tipo"  =>array("header"=>"TIPO","header_align"=>"center","type"=>"label", "width"=>"35%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal"),
 						"estatus"  =>array("header"=>"ESTATUS","header_align"=>"center","type"=>"label", "width"=>"5%", "align"=>"left",    "wrap"=>"wrap", "text_length"=>"-1", "case"=>"normal")
 					  );
 					  $dgrid->setColumnsInViewMode($vm_colimns);
@@ -187,37 +193,31 @@
 					## | 7. Add/Edit/Details Mode settings:                                        | 
 					## +---------------------------------------------------------------------------+
 					##  ***  set settings for edit/details mode
-					//*****ARREGLO ******//
-					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_actividad_economica ORDER BY tx_tipo";
-					$especial_array_str = crearArregloDataGrid($tema_array_sql,"actividad_array",g_BaseDatos);
-					eval($especial_array_str);	
-					//******FIN DE ARREGLO *****///
-					//*****ARREGLO ******//
-					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_resolucion_ministerial ORDER BY tx_tipo";
-					$especial_array_str = crearArregloDataGrid($tema_array_sql,"resolucion_array",g_BaseDatos);
+					
+					$tema_array_sql = "SELECT tx_tipo, id_tipo_objeto FROM vie_tipo_seguro";
+					$especial_array_str = crearArregloDataGrid($tema_array_sql,"tipo_seguro_array",g_BaseDatos);
 					eval($especial_array_str);	
 					//******FIN DE ARREGLO *****///
 					 $estatus=array(""=>"SELECCIONE","1"=>"ACTIVA", "0"=>"INACTIVA");
-					  $table_name = "tbl_empresa";
-					  $primary_key = "id_empresa";
+					 $estatus_si_no=array(""=>"SELECCIONE","1"=>"SI", "0"=>"NO");
+					  $table_name = "mod_seguro";
+					  $primary_key = "id_seguro";
 					  $condition = "";
 					  $dgrid->setTableEdit($table_name, $primary_key, $condition);
 					  $dgrid->setAutoColumnsInEditMode(false);
 					   $em_columns = array(
+					   "id_tipo_seguro" =>array("header"=>"TIPO DE SEGURO", "type"=>"enum",  "source"=>$tipo_seguro_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false),
 						"tx_ruc" =>array("header"=>"RUC", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_nombre" =>array("header"=>"RAZÓN SOCIAL", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"id_resolucion" =>array("header"=>"RESOLUCIÓN MINISTERIAL", "type"=>"enum",  "source"=>$resolucion_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
-						"id_tipo_actividad" =>array("header"=>"TIPO DE ACTIVIDAD ECONÓMICA", "type"=>"enum",  "source"=>$actividad_array, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
-						"tx_descripcion" =>array("header"=>"ACTIVIDAD ECONÓMICA (DETALLADA)", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_descripcion" =>array("header"=>"ACTIVIDAD (DETALLADA)", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_servicios" =>array("header"=>"SERVICIOS (DETALLADA)", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_url" =>array("header"=>"PAGINA WEB", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
 						"tx_direccion" =>array("header"=>"DOMICILIO PRINCIPAL", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_departamento" =>array("header"=>"DEPARTAMENTO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_provincia" =>array("header"=>"PROVINCIA", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_distrito" =>array("header"=>"DISTRITO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_telefono" =>array("header"=>"TELEFONOS (C0D) + NUMERO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
-						"tx_correo_electronico" =>array("header"=>"CORREO ELECTRÓNICO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_telefonos" =>array("header"=>"TELEFONOS (C0D) + NUMERO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"tx_correo" =>array("header"=>"CORREO ELECTRÓNICO", "type"=>"textbox", "width"=>"100%", "req_type"=>"rty", "title"=>"", "unique"=>false, "default"=>""),
+						"id_tipo_sctr" =>array("header"=>"CUMPLE CON SCTR", "type"=>"enum",  "source"=>$estatus_si_no, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"SEGURO COMPLEMENTARIO PARA TRABAJO DE RIESGO", "unique"=>false, "default"=>"0"),
 						"id_estatus" =>array("header"=>"ESTATUS", "type"=>"enum",  "source"=>$estatus, "view_type"=>"dropdownlist", "width"=>"210px", "req_type"=>"ry", "title"=>"", "unique"=>false, "default"=>"1"),
-						"id_useact" =>array("header"=>"",       "type"=>"hidden",    "req_type"=>"sny", "default"=>$_SESSION['id_usuario'], "visible"=>"false", "unique"=>false)
+						"id_usuario" =>array("header"=>"",       "type"=>"hidden",    "req_type"=>"sny", "default"=>$_SESSION['id_usuario'], "visible"=>"false", "unique"=>false)
 					  );
 					$dgrid->setColumnsInEditMode($em_columns);
 					##  *** set auto-genereted eName_1.FieldName > 'a' AND TableName_1.FieldName < 'c'"
@@ -233,29 +233,6 @@
             </div>
         </div>
     </div>
-          <!-- end: content -->
-    <!-- start: right menu -->
-		<?php require('cfg_menu_derecho.php'); ?>
-	<!-- end: right menu -->
-      <!-- start: Mobile -->
-			<?php require('cfg_menu_movil.php'); ?>
-       <!-- end: Mobile -->
-    <!-- start: Javascript -->
-    <script src="asset/js/jquery.min.js"></script>
-    <script src="asset/js/jquery.ui.min.js"></script>
-    <script src="asset/js/bootstrap.min.js"></script>
-    <!-- plugins -->
-    <script src="asset/js/plugins/moment.min.js"></script>
-    <script src="asset/js/plugins/jquery.nicescroll.js"></script>
-    <script src="asset/js/plugins/jquery.mask.min.js"></script>
-	<script src="asset/js/plugins/jquery.validate.min.js"></script>
-    <!-- custom -->
-     <script src="asset/js/main.js"></script>
-     <script type="text/javascript">
-      (function(jQuery){
-		 $('.mask-phone_us').mask('(000) 000-00.00.00');
-      })(jQuery);
-     </script>
-  <!-- end: Javascript -->
+ 
   </body>
 </html>

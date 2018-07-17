@@ -1,11 +1,8 @@
          <!-- start:Left Menu -->
-            <div id="left-menu">
+            <div id="left-menu" style="margin-top:60px">
               <div class="sub-left-menu scroll" >
                 <ul class="nav nav-list">
-                    <li class="time">
-                      <h1 class="animated fadeInLeft" style="font-size:50px">21:00</h1>
-                      <p class="animated fadeInRight">Sat,October 1st 2029</p>
-                    </li>
+                    
 					<li class="text-center" style="background:green; color:#fff; padding: 10px 0px 10px 0px;">
 						<h4><strong>PLANIFICACIÓN</strong></h4>
 					 </li>

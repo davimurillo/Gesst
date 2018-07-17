@@ -1,36 +1,44 @@
- <?php require_once('common.php'); checkUser(); ?>
 <!DOCTYPE html>
 <html lang="en">
+<?php 
+/*
+Sistema: Gessalud
+Author: Davi Murillo
+Description: Sistema de Seguridad y Salud Ocupacional.
+Version: 1.0
+Tags: seguridad, salud, ocupacional, PAVH, IPER
+*/
+$dir="../"; require_once('../common.php'); checkUser(); 
+?>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Miminium Admin Template v.1">
-	<meta name="author" content="Isna Nur Azis">
-	<meta name="keyword" content="">
+	<meta name="description" content="Salud, Trabajo, Ocupación, Seguridad">
+	<meta name="author" content="Gessalud">
+	<meta name="keyword" content="Salud, Trabajo, Ocupación, Seguridad">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gessalud</title>
+    <title>Gesstrab</title>
     <!-- start: Css -->
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
       <!-- plugins -->
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/font-awesome.min.css"/>
-	  <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
-      <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
-	  <link rel="stylesheet" type="text/css" href="asset/css/plugins/datatables.bootstrap.min.css"/>
-	<link href="asset/css/style.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/simple-line-icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/animate.min.css"/>
+	  <link rel="stylesheet" type="text/css" href="../../assets/css/plugins/datatables.bootstrap.min.css"/>
+	  <link href="../../assets/css/style.css" rel="stylesheet">
 	<!-- end: Css -->
-	<link rel="shortcut icon" href="asset/img/logomi.png">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<link rel="shortcut icon" href="../../img/logos/logo.png">
+
   </head>
  <body id="mimin" class="dashboard">
       <!-- start: Header -->
-			  <?php require("cfg_cabecera.php"); ?>
+		<?php require("../cabecera.php"); ?>
 	  <!-- end: Header -->
     <div class="container-fluid mimin-wrapper">
            <!-- start:Left Menu -->
-		     <?php require("cfg_menu_izquierdo_planificar.php"); ?>
+		   <?php require("cfg_menu_izquierdo_planificar.php"); ?>
 		    <!-- end:Left Menu -->
           <!-- start: content -->
         <div id="content">
@@ -279,23 +287,14 @@
         </div>
     </div>
           <!-- end: content -->
-    <!-- start: right menu -->
-		<?php require('cfg_menu_derecho.php'); ?>
-	<!-- end: right menu -->
-      <!-- start: Mobile -->
-			<?php require('cfg_menu_movil.php'); ?>
-       <!-- end: Mobile -->
-   <!-- start: Javascript -->
-<script src="asset/js/jquery.min.js"></script>
-<script src="asset/js/jquery.ui.min.js"></script>
-<script src="asset/js/bootstrap.min.js"></script>
+
 <!-- plugins -->
-<script src="asset/js/plugins/moment.min.js"></script>
-<script src="asset/js/plugins/jquery.datatables.min.js"></script>
-<script src="asset/js/plugins/datatables.bootstrap.min.js"></script>
-<script src="asset/js/plugins/jquery.nicescroll.js"></script>
+<script src="../../asset/js/plugins/moment.min.js"></script>
+<script src="../../asset/js/plugins/jquery.datatables.min.js"></script>
+<script src="../../asset/js/plugins/datatables.bootstrap.min.js"></script>
+<script src="../../asset/js/plugins/jquery.nicescroll.js"></script>
 <!-- custom -->
-<script src="asset/js/main.js"></script>
+<script src="../../asset/js/main.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('#datatables-example').DataTable();
