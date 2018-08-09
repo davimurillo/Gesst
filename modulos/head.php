@@ -3,7 +3,7 @@
 <meta name="author" content="Gessalud">
 <meta name="keyword" content="Salud, Trabajo, Ocupación, Seguridad">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gesstrab</title>
+<title>GESSTRAB ®</title>
 <!-- start: Css -->
 <link rel="stylesheet" href="<?php echo $dir ?>../assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo $dir ?>../style.css">
